@@ -1,0 +1,255 @@
+@font-face {
+  font-family: Heebo;
+  src: local("Heebo"),
+    url("../fonts/Heebo-Regular.woff2") format("woff2"),
+    url("../fonts/Heebo-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Heebo;
+  src: local("Heebo-Medium"),
+    url("../fonts/Heebo-Medium.woff2") format("woff2"),
+    url("../fonts/Heebo-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Heebo;
+  src: local("Heebo-Bold"),
+    url("../fonts/Heebo-Bold.woff2") format("woff2"),
+    url("../fonts/Heebo-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Heebo;
+  src: local("Heebo-Black"),
+    url("../fonts/Heebo-Black.woff2") format("woff2"),
+    url("../fonts/Heebo-Black.woff") format("woff");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+  color: #21243D;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+  width: 1200px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 10px 148px 32px;
+}
+
+.blog-title,
+.works-title {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/** Header **/
+.header-nav-items {
+  padding: 27px 60px;
+  justify-content: end;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 33px;
+}
+
+/** Intro **/
+.intro-container {
+  padding: 140px 500px 70px 148px;
+  background-image: url("../IMG/john.jpg");
+  background-position: 760px 126px;
+  background-repeat: no-repeat;
+}
+
+.intro-title {
+  margin-bottom: 30px;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.intro-desc {
+  margin-bottom: 35px;
+}
+
+.intro-download-btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+  color: #fff;
+  background-color: #FF6464;
+  border-radius: 2px;
+}
+
+/** Blog **/
+.blog {
+  background-color: #EDF7FA;
+}
+
+.blog-header {
+  justify-content: space-between;
+}
+
+.blog-link {
+  margin: auto 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #00A8CC;
+}
+
+.blog-item {
+  width: 418px;
+  padding: 24px;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px 0px #BBE1FA40;
+}
+
+.blog-item:not(:last-child) {
+  margin-right: auto;
+}
+
+.blog-item-title {
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.blog-item-characteristic {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+/** Works **/
+.works-items {
+  flex-direction: column;
+}
+
+.works-item {
+  padding: 25px 0;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.works-article-image {
+  margin-right: 18px;
+}
+
+.works-article-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+
+.works-article-year {
+  display: inline-block;
+  text-align: center;
+  padding: 0 10px;
+  margin-right: 60px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 25px;
+  border-radius: 16px;
+  color: #fff;
+  background-color: #142850;
+}
+
+.works-atricle-characteristics {
+  margin-bottom: 20px;
+}
+
+.works-article-category {
+  color:#8695A4
+}
+
+/** Footer **/
+.footer-container {
+  padding: 100px 148px 50px;
+  flex-direction: column;
+}
+
+.footer-links {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-links-item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+}
