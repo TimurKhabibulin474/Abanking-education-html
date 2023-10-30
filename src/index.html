@@ -1,16 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/src/styles/normalize.css">
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <title>John's portfolio</title>
 </head>
-
 <body>
-    
+  <header class="header">
+    <div class="header-content">
+      <nav class="header-nav">
+        <ul class="header-nav-items flex">
+          <li class="header-nav-item">
+            <a href="#works" class="header-link">
+              Works
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#blog" class="header-link">
+              Blog
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#contact" class="header-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="intro">
+      <div class="intro-container">
+        <h1 class="intro-title">
+          Hi, I&nbsp;am John, Creative&nbsp;Technologist
+        </h1>
+        <p class="intro-desc desc">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do&nbsp;amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
+        <button class="intro-download-btn">
+          Download Resume
+        </button>
+      </div>
+    </section>
+    <section id="blog" class="blog">
+      <div class="container">
+        <div class="blog-header flex">
+          <h2 class="blog-title">
+            Recent posts
+          </h2>
+          <a href="#" class="blog-link">
+            View all
+          </a>
+        </div>
+        <ul class="blog-items flex">
+          <li class="blog-item flex">
+            <h3 class="blog-item-title">
+              Making a&nbsp;design system from scratch
+            </h3>
+            <span class="blog-item-characteristic">
+              Design, Pattern
+            </span>
+            <p class="blog-item-desc desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do&nbsp;amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </li>
+          <li class="blog-item flex">
+            <h3 class="blog-item-title">
+              Creating pixel perfect icons in&nbsp;Figma
+            </h3>
+            <span class="blog-item-characteristic">
+              Figma, Icon Design
+            </span>
+            <p class="blog-item-desc desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do&nbsp;amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="works" class="works">
+      <div class="container">
+        <h2 class="works-title">
+          Featured works
+        </h2>
+        <ul class="works-items flex">
+          <li class="works-item">
+            <article class="works-article flex">
+              <img src="../src/IMG/works1.jpg" alt="Dashboard" class="works-article-image">
+              <div class="works-article-text">
+                <h3 class="works-article-title">
+                  Designing Dashboards
+                </h3>
+                <div class="works-atricle-characteristics">
+                  <span class="works-article-year">
+                    2020
+                  </span>
+                  <span class="works-article-category">
+                    Dashboard
+                  </span>
+                </div>
+                <p class="works-article-desc desc">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do&nbsp;amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="works-item">
+            <article class="works-article flex">
+              <img src="../src/IMG/works2.jpg" alt="Portrait" class="works-article-image">
+              <div class="works-article-text">
+                <h3 class="works-article-title">
+                  Vibrant Portraits of&nbsp;2020
+                </h3>
+                <div class="works-atricle-characteristics">
+                  <span class="works-article-year">
+                    2018
+                  </span>
+                  <span class="works-article-category">
+                    Illustration
+                  </span>
+                </div>
+                <p class="works-article-desc desc">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do&nbsp;amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="works-item">
+            <article class="works-article flex">
+              <img src="../src/IMG/works3.jpg" alt="Picture" class="works-article-image">
+              <div class="works-article-text">
+                <h3 class="works-article-title">
+                  36&nbsp;Days of&nbsp;Malayalam type
+                </h3>
+                <div class="works-atricle-characteristics">
+                  <span class="works-article-year">
+                    2018
+                  </span>
+                  <span class="works-article-category">
+                    Typography
+                  </span>
+                </div>
+                <p class="works-article-desc desc">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do&nbsp;amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer id="contact" class="footer">
+    <div class="footer-container flex">
+      <ul class="footer-links flex">
+        <li class="footer-links-item"><a href="#" class="footer-link footer-link-facebook">
+          <img src="../src/IMG/facebook.svg" alt="facebook">
+        </a></li>
+        <li class="footer-links-item"><a href="#" class="footer-link footer-link-instagram">
+          <img src="../src/IMG/instagram.svg" alt="instagram">
+        </a></li>
+        <li class="footer-links-item"><a href="#" class="footer-link footer-link-twitter">
+          <img src="../src/IMG/twitter.svg" alt="twitter">
+        </a></li>
+        <li class="footer-links-item"><a href="#" class="footer-link footer-link-linkedin">
+          <img src="../src/IMG/linkedin.svg" alt="linkedin">
+        </a></li>
+      </ul>
+      <span class="footer-copy">
+        Copyright &copy;2020 All rights reserved
+      </span>
+    </div>
+  </footer>
 </body>
-
 </html>
