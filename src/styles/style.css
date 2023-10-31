@@ -181,7 +181,9 @@ body {
 }
 
 .blog-items {
-  display: flex;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 418px 418px;
 }
 
 .blog-item {
@@ -191,10 +193,6 @@ body {
   flex-direction: column;
   background-color: #fff;
   box-shadow: 0px 4px 10px 0px #BBE1FA40;
-}
-
-.blog-item:not(:last-child) {
-  margin-right: auto;
 }
 
 .blog-item-title {
@@ -222,11 +220,12 @@ body {
 }
 
 .works-article {
-  display: flex;
+  display: grid;
+  grid-gap: 18px;
+  grid-template-columns: 246px 1fr;
 }
 
 .works-article-image {
-  margin-right: 18px;
   border-radius: 10px;
 }
 
